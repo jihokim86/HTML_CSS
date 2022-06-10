@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="getid.jsp" method="get">
+    이름 : <input type="text" name="name"/><br>
+    물품가격 : <input type="text" name="user"/><br>
+    수량 : <input type="text" name="count"/>
+           <input type="button" value="계산" onclick="alert('1000원 입니다')"/><br>
+           <!-- <input type="button" value="계산" onclick="('000원 입니다')"/><br> -->
+           <!-- alert 팝업(경고) 창 관련되어 있음. -->
+
+    <!-- 그룹화??? -->
+    <!-- name = gender 를 같게 만들어놓고~ 구별은 value로 함 -->
+    <label for="male">
+        남성
+    </label>
+    <input type="radio" name="gender" id="male" checked= "true" value="male"/><br>
+
+    <label for="female">
+        여성
+    </label>
+    <input type="radio" name="gender" id="female" value="female"/><br>
+
+    <!-- 콤보상자 -->
+    <select name="cars" id="">
+        <option value="bmw">BMW</option>
+        <option value="benz">Benz</option>
+        <option value="hyundai">현대자동차</option>
+        <option value="kia">기아자동차</option>
+    </select><br>
+
+    <!-- 파일 선택 열기 -->
+    <input type="file" accept="image/jpg,image/gif"/>
+    
+
+</form>
+</body>
+</html>
