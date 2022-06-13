@@ -1,0 +1,19 @@
+body{ /*body태크에 적용하겠다~~*/
+    background-color:  yellow;
+    font-family: serif;;
+    color: black;
+}
+
+h2{
+    color: red;
+
+}
+
+p.first{
+    color: green;
+}
+
+p.second{
+    color: blue;
+}
+

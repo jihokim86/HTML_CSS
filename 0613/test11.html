@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html5 구조</title>
+</head>
+    <style>
+        body{
+            background-color: #efe5d0;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header{
+            background-color: #e3afed;
+            color : black;
+            margin: 0px;
+            text-align: center;
+            padding:  5px;
+        }
+        h1{
+            margin: 0px;
+        }
+        section#main{
+            display: table-cell;
+            background-color: yellow;
+            padding : 15px;
+        }
+        nav{
+            display: table-cell;
+            background-color: #ffd800;;
+            padding :15px;
+        }
+        footer{
+            background-color: #954b4b;
+            color: #efe5d0;
+            text-align: center;
+            padding: 10px;
+            margin: 0px 0px 0px 0px;
+        }
+
+    </style>
+<body>
+    <header>
+        <h1>HTML 5 Blog Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://www.w3.org/">W3C</a></li>
+            <li><a href="https://www.naver.com/">네이버</a></li>
+            <li><a href="https://www.daum.net/">다음</a></li>
+        </ul>
+        <figure>
+            <img src="/0609/images/coffee.jpg" alt="커피" width="85" height="85"/>
+            <figcaption> 농장 커피</figcaption>
+        </figure>
+    </nav>
+    
+    <section id="main">
+        <article> <h1>Semantic Tags</h1> 
+         <p>직접 농사 짓는 곳 바로 앞이 커피 농장이다. 이곳에서 직접 코나 커피 원두를 재배</p>
+        </article>
+        <article> <h1>Semantic Tags</h1> 
+        <p>(카페,커피숍) 위에 있는 사항들을 커피 농장에 방문하여 체험한다는 것은 견학의 효과로 실지로 보고...</p>
+        </article>
+    </section>
+    <footer>
+        Copyright(c) 2022 kim
+    </footer>
+</body>
+</html>
