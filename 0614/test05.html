@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블</title>
+    <style>
+        body{
+            height: 100%;
+            background-color: #f3f1e9;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse; /*테이블의 boder를 한줄로 표현*/
+            text-align: center;
+        }
+        
+        table caption{   
+            color: red;
+            text-decoration: underline;
+        }       
+
+    </style>
+</head>
+<body>
+    <form action="#"> <!--결정나지 않으면 '#'으로 둔다 -->
+        <table border="1">
+            <caption>Shopping Cart</caption>
+            <tr>
+                <th>품목</th>
+                <th>가격</th>
+                <th>수량</th>
+                <th>합계</th>
+            </tr>
+
+            <tr>
+                <td>컴퓨터 세트</td>
+                <td>2,000,000원</td>
+                <td><input type="number" min="0" step="1" value="0"/></td>
+                <td><input type="text" size="6" value="0"/></td>
+            </tr>
+
+            <tr>
+                <td>컴퓨터 세트</td>
+                <td>2,000,000원</td>
+                <td><input type="number" min="0" step="1" value="0"/></td>
+                <td><input type="text" size="6" value="0"/></td>
+            </tr>
+
+            <tr>
+                <td>컴퓨터 세트</td>
+                <td>2,000,000원</td>
+                <td><input type="number" min="0" step="1" value="0"/></td>
+                <td><input type="text" size="6" value="0"/></td>
+            </tr>
+
+            <tr>
+                <td>컴퓨터 세트</td>
+                <td>2,000,000원</td>
+                <td><input type="number" min="0" step="1" value="0"/></td>
+                <td><input type="text" size="6" value="0"/></td>
+            </tr>
+        </table>
+        <input type="button"    value="계산" id=""/>
+        <input type="submit"    value="구매" id=""/>
+        <input type="reset"     value="초기화" id=""/>
+        <!-- <button>중복검사</button><br>  이 버튼과 위에 버튼의 차이는? -->
+     </form>
+     <a href="main.html">Back to home</a>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원정보입력</title>
+    <style>
+        body{
+            height: 100%;
+            background-color: #f3f1e9;
+        }
+
+        label{
+            display: inline-block;
+            width: 120px;
+        }
+
+        input{
+            display: inline-block;
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page-wrap" >
+        <form action="process.jsp" method="post">
+        <fieldset>
+            <legend>회원정보입력</legend>
+
+            <label for="name">ID</label>
+            <input type="text" name="name" id="text1">
+            <button>중복검사</button><br>
+
+            <label for="password1">패스워드</label>
+            <input type="password" name="password1"/><br>
+
+            <label for="password2">패스워드확인</label>
+            <input type="password" name="password2"/><br>
+
+            <label for="name">이름</label>
+            <input type="text" name="name" id=""/><br>
+
+            <label for="tel">전화번호</label>
+            <input type="tel" name="tel"/><br>
+
+            <label for="email">email</label>
+            <input type="email" name="email" id=""/><br>
+
+            <label for="dob">생년월일</label>
+            <input type="date" name="dob" id=""/><br>
+
+            <label for="url">홈페이지</label>
+            <input type="url" name="url" id=""/><br>
+
+            <label for="gender">남성</label> 
+            <input type="radio" name="gender" value="Mail" checked id=""/><br>
+            
+            <label for="gender">여성</label>
+            <input type="radio" name="gender" value="Femail" id=""/><br>
+            
+        </fieldset>
+        <input type="submit" name="submit" value="제출" id=""/>
+        <input type="reset" name="reset" value="초기화" id=""/>
+        </form>
+    </div>
+</body>
+</html>
