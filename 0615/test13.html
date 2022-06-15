@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function printArray(a){
+            document.write("[");
+            for(var i =0; i<a.length;i++){
+                document.write(a[i]+" ");
+            }
+            document.write("]<br>");
+        }
+
+        var myArray1 = new Array();
+        myArray1[0] = "apple";
+        myArray1[1] = "banana";
+        myArray1[2] = "orange";
+
+        var myArray2 = new Array("apple","banana","orange");
+        var myArray3 = ["apple","banana","orange"];
+
+        printArray(myArray1);
+        printArray(myArray2);
+        printArray(myArray3);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

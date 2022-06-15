@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script>
+    function checkPwd(){
+        var s = document.getElementById("pwd").value;
+        if(s.length<6){
+            alert("패스워드는 6글자 이상이어야 합니다.");
+        }
+    }
+</script>
+<body>
+    패스워드 : <input type="password" id="pwd" size="10"/>
+    <button onclick="checkPwd()">검사</button>
+</body>
+</html>
