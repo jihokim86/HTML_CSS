@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function process(){
+            var obj = document.myform.text1; //documnet(body)안에 myform안에 text1
+            alert(obj.value);
+        }
+
+    </script>
+</head>
+<body>
+    <form action="" name="myform">
+        <input type="text" id="target" name="text1">
+        <input type="submit" value="제출" onclick="process()">
+
+    </form>
+</body>
+</html>
