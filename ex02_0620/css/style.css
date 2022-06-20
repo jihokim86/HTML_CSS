@@ -1,0 +1,57 @@
+
+/* 웹페이지 전체 속성 */
+*{
+   margin: 0 auto; 
+   padding: 0;
+   list-style:  none;
+   font-family: "맑은 고딕";
+}
+
+/* a 태크의 속성 */
+a{ color: inderit; text-decoration: none; }
+
+/* 버튼 태그의 속성 */
+button{ cursor: pointer; }
+
+/* body,html 태그의 속성 */
+body,html{ min-width: 960px;}
+
+/* left기준으로 폭을 100% */
+.all{width: 100%; float:left;}
+
+/* 960이상되면 줄바꿈??? */
+.wrap{width: 960px;}
+
+.clear{clear: both; position: inherit;}
+
+header{height: 130px;}
+
+#header_logo{padding-top: 20px;}
+
+/* 로고부분 스타일 지정하기 */
+.logo{height: 100px;overflow: hidden;float: left;}
+/* 로고안의 a안의 ima에 대한 속성 */
+.logo>a>img{width: 250px;}
+
+nav{float: right; margin-top: 30px; padding: 10px;}
+.nav{width: 600px; height: 20px;}
+.nav>li{float: left; width: 200px; text-align: center; position: relative; transition: all 0.4s; padding: 5px 0;}
+.nav>li:hover{background-color: #7b422e; color: #ffffff;}
+
+/* 서브메뉴 숨기기 나타나기는 script.js에 정의되어잇음*/
+.submenu{display: none; background-color: rgba(255, 255, 255, 0.8); position: absolute; z-index: 1; width: 100%; margin-top: 5px;}
+.submenu>li{padding: 5px 0; transition: all 0.4s; color: #000;}
+.submenu>li:hover{background-color: #bb692d; color: inherit;}
+
+#imageslide{height: 400px;}
+
+#contents{height: 500px;}
+
+footer{
+    height: 150px;
+    max-width: 100%;
+    margin-top: 30px;
+    background-color: #bb692d;
+    color: #ffffff;
+    overflow: hidden; /* 이미지가 지정된 영역을 벗어나면 밖으로 넘치는 부분은 보이지 않도록 조정*/
+}

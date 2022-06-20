@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/0617/js/jquery-3.6.0.min.js"></script>
+    <script>
+        //(선택자).함수.(내용)
+        $(document).ready(function(){
+            $("#text").click(function(){
+                alert($("#target").text());
+            });
+            $("#html").click(function(){
+                alert($("#target").html());
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="target">이것은<br><strong>하나의</strong> 단락입니다.</p>
+    <button id="text">text()</button>
+    <button id="html">html()</button>
+</body>
+</html>

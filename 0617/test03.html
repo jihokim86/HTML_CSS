@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/0617/js/jquery-3.6.0.min.js"></script>
+    <script>
+        //(선택자).함수.(내용)
+        $(document).ready(function(){
+            $("button").click(function(){
+                // $("#dog").show(speed, 함수이름);
+                $("#dog").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Show it</button>
+    <img id="dog" src="/0617/img/무제-1.jpg" alt="강아지" 
+    width="120" height="100" style="display:none;">
+</body>
+</html>

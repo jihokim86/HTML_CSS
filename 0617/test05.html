@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/0617/js/jquery-3.6.0.min.js"></script>
+    <script>
+        //(선택자).함수.(내용)
+        $(document).ready(function(){
+            $("button").click(function(){
+                //#text로해도되지않나?
+                alert($("#target").val());
+            });
+        });
+    </script>
+</head>
+<body>
+    이름 : <input type="text" id="target" value=""><br>
+    <button id="text">val()</button>
+    
+</body>
+</html>
