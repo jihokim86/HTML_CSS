@@ -1,0 +1,104 @@
+
+/* 웹페이지 전체 스타일 적용 */
+*{
+    margin: 0 auto;
+    list-style: none;
+    font-family: "맑은 고딕";
+    padding: 0%;
+}
+
+/* 웹페이지 폭 지정 */
+body,html{ min-width: 1000px;}  /*폭 1000px 지정 */
+img{max-width: 100%;}           /*이미지 폭 지정인데? 100%는 머지?*/
+.all{width: 100%; float: left;} /*(header태그)(image,content div태그) 폭 지정 및 왼쪽 정렬*/
+.wrap{width: 1000px;}           /*header 내부 로고 div태크 폭 지정*/
+.content{width: 1000px;}
+
+/*링크 태그 속성*/
+a{ color: inherit; text-decoration: none;}
+
+/* clear 속성은 정렬 속성을 초기화 해줌 both=left+right 속성을 초기화*/
+.clear{ clear: both; position: inherit;}
+
+/*영역별 기본 스타일 지정(높이,폭)*/
+header{ height: 180px;}
+#imageslide{height: 350px;}
+#content{height: 500px;}
+footer{height: 150px; width: 1000px;}
+
+/*헤더 로고 스타일 지정하기*/
+#header_logo{ padding: 20px; } 
+.logo{height: 100px; overflow: hidden; float: left; }
+.logo>a>img{width: 300px;} /* 값을 입력안해도 그림 사이즈에 맞게 들어가는거같은데?*/
+
+/*헤더 옆 메뉴 스타일 지정*/
+nav{ float: right; margin-top: 10px; padding: 10px;}
+.nav{width: 600px; height: 20px;}
+.nav>li{float: left; width: 200px; text-align:center; position: relative; transition: all 0.4s; padding: 5px 0;}
+.nav>li:after{clear: both;}
+.nav>li:hover{background-color: #969; color: #ffffff;}
+
+/*서브메뉴 스타일 지정*/
+.submenu{display: none; background-color: rgba(255, 255, 255, 0.8);
+         position: absolute; z-index: 1; width: 100%; margin-top: 5px; }
+.submenu>li{padding: 5px 0 0 0; transition: all 0.4s; color: #000;}
+.submenu>li:hover{background-color: #cc9999; color: inherit;}
+
+/*이미지 스타일 지정*/
+.imgs{position:relative; overflow: hidden; height: 350px;}
+.imgs>img{width:100px; position: absolute;}
+
+/*메인 이미지에 나타날 글자 영역 스타일*/
+.welcome{height: 40px; width: 300px; position: absolute; margin:-50px 0 0 0 px !important;
+         text-align: center; line-height: 50px; background-color: rgba(255, 255, 255, 0.2);
+         left: 40%; top: 15%;}
+.welcome{color: #cccccc; font-family: "Times New Roman",Times,serif;}
+#slides{width: 1000px; height: 300px; margin: 0 auto; padding: 0;}
+#slides li{display: none;}
+#slides li:first-child{display: block;}
+#slides li img{width: 1000px; height: 350px;}
+#btn_slides{text-align: center; width: 1000px;}
+#btn_slides a.off{cursor: default; opacity: 0.5;}
+
+/*공지사항 영역 스타일 지정*/
+.notice{width: 480px; margin-top: 20px; float: left;}
+.notice h2{text-align: center; columns: #666; padding-bottom: 10px; border-bottom: 1px solid#666;}
+.table{border-collapse: collapse; font-size: 0.9em; color: #666; width: 430px;}
+.table tr>th{padding: 10px;}
+.table tr>td{padding-top: 5px; padding: 5px;}
+.table tr:nth-child(2n){background-color: #D1B59D;}
+
+/*파트너 영역 스타일 지정*/
+.partner{margin-top: 20px; float: right; width: 480px;}
+.partner h2{color: #666; text-align: center;}
+.partner_info{margin-top: 10px; padding-left: 20%;}
+.partner_info img:nth-child(1){width: 60%; cursor: pointer;}
+.partner_info img:nth-child(2){width: 50%; cursor: pointer;}
+
+/*파트너 배너 확대 영역*/
+#modal{width: 100%; height: 100%; position: fixed; left: 0; top: 0;
+        background: rgba(0, 0, 0, 0.6);z-index: 1; display: none; opacity: 0;}
+#modal .body{padding: 20px; position: fixed; left: 50%; top: -20%; 
+                opacity: 0; transform: translate(-50%,50%); background: white;}
+#modal.active{display: block; opacity: 1;}
+#modal.active .body{top: 30%; opacity: 1;}
+#modal .body img{display: block; margin-bottom: 20px;}
+#modal .body .button{margin-top: 20px; text-align: center;}
+#modal .body .button button{padding: 6px 12px; border: none; border-radius: 6px; 
+                            color: white; background-color: #996699;}
+
+/*아이콘 스타일 지정*/  
+.icon{margin-top: 20px;}
+.icons{text-align: center;}
+.btn{width: 160px; margin: 20px; display: inline-block;}   
+.btn>button:hover{background-color: #939;} 
+.btn button{padding: 10px; background-color: #cc9999; color: #fff; border: none;
+            border-radius: 10px; font-size: 20px;}
+
+ /*footer 스타일 지정*/
+ footer{height: 150px; width: 1000px; background-color: #969; max-width: 100%;
+        color: #fff;overflow: hidden; margin-top: 30px;}
+footer .wrap{padding: 10px 20px;}
+footer ul{width: 50%; float: left;}  
+footer ul>li{float: left; margin-left: 20px; margin-top: 10px;}  
+footer p{width: 50%; font-size: 12px; float: right; color: #fff; margin-top: 10px;}    
