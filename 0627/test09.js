@@ -7,7 +7,9 @@ Object.defineProperty(user,"age",{
     },
     set:function(age){
         if(age<0){
-            this._age=age;
+            console.error('0보다 작은 값은 올 수 없습니다.')
+        }else{
+            this._age =age;
         }
     },
     enumerable : true
